@@ -27,4 +27,4 @@ dot resource.dot -Tsvg -o resource.svg
   ip addr 
 ```
 
-## Now Explore in broswer. 
+## Now Explore in browser. 
