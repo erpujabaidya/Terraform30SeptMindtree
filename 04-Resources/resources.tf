@@ -20,8 +20,12 @@ resource "aws_instance" "backend" {
   ami           = "ami-0947d2ba12ee1ff75"
   instance_type = "t2.micro"
   count         = 2
-   lifecycle {
+  lifecycle {
     prevent_destroy = false
   }
+  timeouts { 
+    create = "60m"
+    delete = "2h"
+ }
 }
 
