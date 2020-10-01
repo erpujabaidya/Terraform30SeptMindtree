@@ -38,7 +38,7 @@ resource "aws_instance" "east_frontend" {
     create_before_destroy = true
   }
   tags = {
-    Name = "${join("-", list(var.env-name, "Frontend"))}"
+    Name = "${join("-", list(var.env-name, "Frontend"))}-${count.index + 1}"
   }
 
 
@@ -70,7 +70,7 @@ resource "aws_instance" "east_backend" {
   }
  
   tags = {
-    Name = "${join("-", list(var.env-name, "Backend"))}"
+    Name = "${join("-", list(var.env-name, "Backend"))}-${count.index}"
   }
 
 
