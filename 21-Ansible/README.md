@@ -22,3 +22,15 @@
  1587  history | grep -i ansible 
  1588  history | grep -i ansible
  1589  history | grep -i ansible > README.md
+ 1595  git add . ; git commit -m "21-Ansible"; git push 
+ 1618  cd 21-Ansible/
+ 1624  cat ansible.cfg 
+ 1633  ansible-playbook -i inventory backend-playbook.yaml 
+ 1637  ansible-playbook -i inventory backend-playbook.yaml 
+ 1640  ansible-playbook -i inventory backend-playbook.yaml 
+ 1652  ansible-playbook -i inventory backend-playbook.yaml 
+ 1656  ansible 172.31.0.100 -i inventory -m setup 
+ 1659  ansible-playbook -i inventory backend-playbook.yaml 
+ 1663  ansible-playbook -i inventory backend-playbook.yaml 
+ 1669  history | grep -i ansible
+ 1670  history | grep -i ansible > README.md 
